@@ -1,16 +1,16 @@
+import enum
 from typing import List
 
 
-
 class Solution:
-    def twoSum(nums: List[int], target: int) -> List[int]:
-
+    def calculator_two_sum(self, nums: List[int], target: int) -> list[int]:
         map = {}
-
-        for idx, value in enumerate(nums):
+        for idx , value in enumerate(nums):
             diff = target - value
             if diff in map:
-                return [map[diff], idx]
-            map[value] = idx
+                print(map[diff], idx)
+                return [map[diff], value]
+            map[value] =  idx
 
-Solution.twoSum(nums=[7,11,15,2], target= 9)
+
+Solution.calculator_two_sum(Solution, [2,10,5,7,13], target=9)
